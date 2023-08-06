@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: sigstore-poc
+  name: sigstore-poc
+spec:
+  containers:
+  - image: ghcr.io/marcolenzo/sigstore-poc@sha256:f0d0251a1b795832badad4acfa47aa7f89420eceb3e5a622fad25d4a361c1c05
+    name: sigstore-poc
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}

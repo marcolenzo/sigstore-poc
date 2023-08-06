@@ -1,0 +1,12 @@
+apiVersion: policy.sigstore.dev/v1beta1
+kind: ClusterImagePolicy
+metadata:
+  name: personal-images-only
+spec:
+  authorities:
+  - keyless:
+      identities:
+      - issuer: https://github.com/login/oauth
+        subject: lenzo.marco@gmail.com
+  images:
+  - glob: '**'

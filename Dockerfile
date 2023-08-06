@@ -1,0 +1,2 @@
+FROM nginx@sha256:6a598f26769bc7011d9a9e1f6923f4b8dc508e1386e2da286323645e352943d9
+ADD index.html /usr/share/nginx/html
